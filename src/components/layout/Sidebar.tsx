@@ -93,17 +93,18 @@ export const Sidebar: React.FC<SidebarProps> = ({
                 );
               })}
             </ul>
-          </nav>
-          
-          <div className="absolute bottom-4 left-4 right-4">
-            <div className="bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg p-4 text-white shadow-lg">
-              <h4 className="font-semibold text-sm">Upgrade to Pro</h4>
-              <p className="text-xs opacity-90 mt-1">Get advanced features and analytics</p>
-              <button className="mt-3 w-full bg-white/20 hover:bg-white/30 rounded-md py-2 px-3 text-xs font-medium transition-colors backdrop-blur-sm">
-                Learn More
-              </button>
+            
+            {/* Upgrade to Pro section moved here */}
+            <div className="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700">
+              <div className="bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg p-4 text-white shadow-lg">
+                <h4 className="font-semibold text-sm">Upgrade to Pro</h4>
+                <p className="text-xs opacity-90 mt-1">Get advanced features and analytics</p>
+                <button className="mt-3 w-full bg-white/20 hover:bg-white/30 rounded-md py-2 px-3 text-xs font-medium transition-colors backdrop-blur-sm">
+                  Learn More
+                </button>
+              </div>
             </div>
-          </div>
+          </nav>
         </div>
       </aside>
     </>
